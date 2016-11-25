@@ -1,0 +1,25 @@
+<Module>
+<ModulePrefs title="Test" height="400" author="Pugsworth" author_email="n/a" description="Testing Google Gadgets">
+<Require feature="google.calendar-0.5.read"/>
+<Require feature="google.calendar-0.5"/>
+<Require feature="settitle"/>
+<Require feature="dynamic-height"/>
+<Require feature="setprefs"/>
+<Require feature="locked-domain"/>
+</ModulePrefs>
+<Content type="html">
+<![CDATA[
+  <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+    "http://www.w3.org/TR/html4/strict.dtd">
+  <html>
+    <body>
+
+      <div>
+        Test Gadget
+      </div>
+
+    </body>
+  </html>
+]]>
+</Content>
+</Module>
