@@ -33,7 +33,7 @@
               out += 'Location = ' + calendarEvent['location'] + '\n';
             }
           }
-          alert(out);
+          console.log(out, calendarEvent);
         }
         google.calendar.read.subscribeToEvents(subscribeEventCallback);
       </script>
