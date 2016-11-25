@@ -14,9 +14,29 @@
   <html>
     <body>
 
-      <div>
+      <h2 class="title">
         Test Gadget
-      </div>
+      </h2>
+
+      <script>
+        function subscribeEventCallback(calendarEvent) {
+          var out;
+          if (!calendarEvent) {
+            // No event is onscreen.
+            out = 'No Event Onscreen!';
+          } else {
+            var out = '';
+            if ('title' in calendarEvent) {
+              out += 'Title = ' + calendarEvent['title'] + '\n';
+            }
+            if ('location' in calendarEvent) {
+              out += 'Location = ' + calendarEvent['location'] + '\n';
+            }
+          }
+          alert(out);
+        }
+        google.calendar.read.subscribeToEvents(subscribeEventCallback);
+      </script>
 
     </body>
   </html>
