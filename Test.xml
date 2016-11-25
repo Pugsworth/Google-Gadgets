@@ -36,7 +36,7 @@
           console.log(out, calendarEvent);
         }
         google.calendar.read.subscribeToEvents(subscribeEventCallback);
-        window.geecal = google.calendar;
+        console.log(google.calendar);
       </script>
 
     </body>
